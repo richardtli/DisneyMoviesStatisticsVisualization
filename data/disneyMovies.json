@@ -1,0 +1,380 @@
+[
+  {
+    "title": "Snow White and the Seven Dwarfs",
+    "year": 1937,
+    "budget": 1.5,
+    "boxOffice": 418 
+  },
+  {
+    "title": "Pinocchio",
+    "year": 1940,
+    "budget": 2.6,
+    "boxOffice": 164 
+  },
+  {
+    "title": "Fantasia",
+    "year": 1940,
+    "budget": 2.28,
+    "boxOffice": 83.3
+  },
+  {
+    "title": "Dumbo",
+    "year": 1941,
+    "budget": 0.95,
+    "boxOffice": 1.3 
+  },
+  {
+    "title": "Bambi",
+    "year": 1942,
+    "budget": 2,
+    "boxOffice": 267.4
+  },
+  {
+    "title": "Saludos Amigos",
+    "year": 1943,
+    "budget": "NA",
+    "boxOffice": 1
+  },
+  {
+    "title": "The Three Caballeros",
+    "year": 1946,
+    "budget": "NA",
+    "boxOffice": 3.355 
+  },
+  {
+    "title": "Make Mine Music",
+    "year": 1946,
+    "budget": 1.35,
+    "boxOffice": 3.275
+  },
+  {
+    "title": "Fun and Fancy Free",
+    "year": 1947,
+    "budget": "NA",
+    "boxOffice": 3.165
+  },
+  {
+    "title": "Melody Time",
+    "year": 1948,
+    "budget": 1.5,
+    "boxOffice": 2.56
+  },
+  {
+    "title": "The Adentures of Ichabod and Mr. Toad",
+    "year": 1949,
+    "budget": "NA",
+    "boxOffice": 1.625
+  },
+  {
+    "title": "Cinderella",
+    "year": 1950,
+    "budget": 2.2,
+    "boxOffice": 182
+  },
+  {
+    "title": "Alice in Wonderland",
+    "year": 1951,
+    "budget": 3,
+    "boxOffice": 3.5
+  },
+  {
+    "title": "Peter Pan",
+    "year": 1953,
+    "budget": 4,
+    "boxOffice": 87.4 
+  },
+  {
+    "title": "Lady and the Tramp",
+    "year": 1955,
+    "budget": 4,
+    "boxOffice": 187 
+  },
+  {
+    "title": "Sleeping Beauty",
+    "year": 1959,
+    "budget": 6,
+    "boxOffice": 51.6 
+  },
+  {
+    "title": "One Hundred and One Dalmatians",
+    "year": 1961,
+    "budget": 4,
+    "boxOffice": 303
+  },
+  {
+    "title": "The Sword in the Stone",
+    "year": 19,
+    "budget": 3,
+    "boxOffice": 22.2 
+  },
+  {
+    "title": "The Jungle Book",
+    "year": 1967,
+    "budget": 4,
+    "boxOffice": 378 
+  },
+  {
+    "title": "The Aristocats",
+    "year": 1970,
+    "budget": 4,
+    "boxOffice": 191 
+  },
+  {
+    "title": "Robin Hood",
+    "year": 1973,
+    "budget": 5,
+    "boxOffice": 33
+  },
+  {
+    "title": "The Many Adventures of Winnie the Pooh",
+    "year": 1977,
+    "budget": "NA",
+    "boxOffice": "NA"
+  },
+  {
+    "title": "The Rescuers",
+    "year": 1977,
+    "budget": 7.5,
+    "boxOffice": 169
+  },
+  {
+    "title": "The Fox and the Hound",
+    "year": 1981,
+    "budget": 12,
+    "boxOffice": 63.5
+  },
+  {
+    "title": "The Black Cauldron",
+    "year": 1985,
+    "budget": 44,
+    "boxOffice": 21.3
+  },
+  {
+    "title": "The Great Mouse Detective",
+    "year": 1986,
+    "budget": 14,
+    "boxOffice": 50
+  },
+  {
+    "title": "Oliver and Company",
+    "year": 1988,
+    "budget": 31,
+    "boxOffice": 121
+  },
+  {
+    "title": "The Little Mermaid",
+    "year": 1989,
+    "budget": 40,
+    "boxOffice": 235
+  },
+  {
+    "title": "The Rescuers Down Under",
+    "year": 1990,
+    "budget": "NA",
+    "boxOffice": 47.4
+  },
+  {
+    "title": "Beauty and the Beast",
+    "year": 1991,
+    "budget": 25,
+    "boxOffice": 451.2
+  },
+  {
+    "title": "Aladdin",
+    "year": 1992,
+    "budget": 28,
+    "boxOffice": 504.1
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "budget": 45,
+    "boxOffice": 978.8 
+  },
+  {
+    "title": "Pocahontas",
+    "year": 1995,
+    "budget": 55,
+    "boxOffice": 346.1 
+  },
+  {
+    "title": "The Hunchback of Notre Dame",
+    "year": 1996,
+    "budget": 70,
+    "boxOffice": 325.3 
+  },
+  {
+    "title": "Hercules",
+    "year": 1997,
+    "budget": 85,
+    "boxOffice": 252.7
+  },
+  {
+    "title": "Mulan",
+    "year": 1998,
+    "budget": 90,
+    "boxOffice": 304.3
+  },
+  {
+    "title": "Tarzan",
+    "year": 1999,
+    "budget": 130,
+    "boxOffice": 448.2
+  },
+  {
+    "title": "Fantasia 2000",
+    "year": 1999,
+    "budget": 85,
+    "boxOffice": 90.9
+  },
+  {
+    "title": "Dinosaur",
+    "year": 2000,
+    "budget": 127.5,
+    "boxOffice": 349.5
+  },
+  {
+    "title": "The Emperor's New Groove",
+    "year": 2000,
+    "budget": 100,
+    "boxOffice": 169.7
+  },
+  {
+    "title": "Atlantis: The Lost Empire",
+    "year": 2001,
+    "budget": 120,
+    "boxOffice": 186.1
+  },
+  {
+    "title": "Lilo and Stitch",
+    "year": 2002,
+    "budget": 80,
+    "boxOffice": 273.1 
+  },
+  {
+    "title": "Treasure Planet",
+    "year": 2002,
+    "budget": 140,
+    "boxOffice": 109.6 
+  },
+  {
+    "title": "Brother Bear",
+    "year": 2003,
+    "budget": 46,
+    "boxOffice": 250.4 
+  },
+  {
+    "title": "Home on the Range",
+    "year": 2004,
+    "budget": 110,
+    "boxOffice": 145.3
+  },
+  {
+    "title": "Chicken Little",
+    "year": 2005,
+    "budget": 150,
+    "boxOffice": 314.4
+  },
+  {
+    "title": "Meet the Robinsons",
+    "year": 2007,
+    "budget": 150,
+    "boxOffice": 170.5
+  },
+  {
+    "title": "Bolt",
+    "year": 2008,
+    "budget": 150,
+    "boxOffice": 310
+  },
+  {
+    "title": "The Princess and the Frog",
+    "year": 2009,
+    "budget": 105,
+    "boxOffice": 271
+  },
+  {
+    "title": "Tangled",
+    "year": 2010,
+    "budget": 260,
+    "boxOffice": 592.5
+  },
+  {
+    "title": "Winnie the Pooh",
+    "year": 2011,
+    "budget": 30,
+    "boxOffice": 50.1 
+  },
+  {
+    "title": "Wreck-It Ralph",
+    "year": 2012,
+    "budget": 165,
+    "boxOffice": 496.5
+  },
+  {
+    "title": "Frozen",
+    "year": 2013,
+    "budget": 150,
+    "boxOffice": 1280
+  },
+  {
+    "title": "Big Hero 6",
+    "year": 2014,
+    "budget": 165,
+    "boxOffice": 657.8
+  },
+  {
+    "title": "Zootopia",
+    "year": 2016,
+    "budget": 150,
+    "boxOffice": 1025
+  },
+  {
+    "title": "Moana",
+    "year": 2016,
+    "budget": 175,
+    "boxOffice": 687.2
+  },
+  {
+    "title": "Ralph Breaks the Internet",
+    "year": 2018,
+    "budget": 175,
+    "boxOffice": 529.3
+  },
+  {
+    "title": "Frozen 2",
+    "year": 2019,
+    "budget": 150,
+    "boxOffice": 1453
+  },
+  {
+    "title": "Raya and the Last Dragon",
+    "year": 2021,
+    "budget": 100,
+    "boxOffice": 130
+  },
+  {
+    "title": "Encanto",
+    "year": 2021,
+    "budget": 150,
+    "boxOffice": 261.3
+  },
+  {
+    "title": "Strange World",
+    "year": 2022,
+    "budget": 180,
+    "boxOffice": 73.6
+  },
+  {
+    "title": "Wish",
+    "year": 2023,
+    "budget": 200,
+    "boxOffice": 255
+  },
+  {
+    "title": "Moana 2",
+    "year": 2024,
+    "budget": 150,
+    "boxOffice": 1059
+  }
+]
