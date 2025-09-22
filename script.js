@@ -16,32 +16,48 @@ function main(){
     const margin = {
         left: 30,
         right: 30,
-        top: 30,
-        bottom: 30
+        top: 90,
+        bottom: 0
     };
     const width = 928; // uncomment for responsive width
     const height = 500;
 
+    const fullWidth = width + margin.left + margin.right;
+    const fullHeight = height + margin.top + margin.bottom;
+    const aspectRatio = fullWidth / fullHeight;
+
     const svg = d3
-        .create("svg")
-        .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom])
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .attr("style", "max-width: 100%; height: auto")
-        .style("border", "1px dotted #000");
+    .create("svg")
+    .attr("viewBox", [0, 0, fullWidth, fullHeight])
+    .attr("preserveAspectRatio", "xMidYMid meet")
+    .style("width", "100%")       // fill width if it fits
+    .style("height", "100%")      // fill height if it fits
+    .style("max-width", "98vw")  // don't go beyond screen width
+    .style("max-height", "98vh") // don't go beyond screen height
+    .style("margin", "auto") // optional centering
+    .style("display", "block")
+    .style("border", "1px dotted #000")
 
     const defs = svg.append("defs");
 
     const pattern = defs.append("pattern")
-    .attr("id", "imgpattern")
-    .attr("patternUnits", "userSpaceOnUse")
-    .attr("width", width)
-    .attr("height", height)
-    .append("image")
+  .attr("id", "imgpattern")
+  .attr("patternUnits", "userSpaceOnUse")
+  .attr("width", fullWidth)
+  .attr("height", fullHeight)
+  .append("image")
+  .attr("href", "posters/frozen.jpeg") // <-- set the actual image URL here
+  .attr("width", fullWidth)
+  .attr("height", fullHeight)
+  .attr("preserveAspectRatio", "xMidYMid slice");
     
-    .attr("width", width)
-    .attr("height", height)
-    .attr("preserveAspectRatio", "xMidYMid slice");
+    const poster = svg.append("rect")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", fullWidth)
+    .attr("height", fullHeight)
+    .attr("fill", "url(#imgpattern)")
+    .classed("poster", true)
 
     const dataBackground = svg
         .append("g")
@@ -49,10 +65,10 @@ function main(){
 
     dataBackground
         .append("rect")
-        .classed("bar-area", true)
         .attr("width", width)
         .attr("height", height)
-        .style("fill", "url(#imgpattern)");
+        .attr('fill', 'none')
+;
 
     const x = d3
         .scaleBand()
@@ -82,12 +98,12 @@ function main(){
         .style("cursor", "pointer")
         .on("mouseover", function (event, d) {
         d3.select(this).attr("stroke", "black").attr("stroke-width", 1);
-        pattern.attr("xlink:href", "posters/frozen.jpeg")  // local image path here
+        pattern.attr("href", `posters/${d.posterFile}`)  // local image path here
         test = d.title;
         })
         .on("mouseout", function (event, d) {
         d3.select(this).attr("stroke", "none").attr("stroke-width", 0);
-        pattern.attr("xlink:href", "")
+        pattern.attr("href", "")
         test = "";
         })
         .append("title")
@@ -95,7 +111,7 @@ function main(){
 
     const xAxis = d3
         .axisBottom(x)
-        .tickValues(d3.range(data.length)) // tick at each integer index
+        .tickValues('') // tick at each integer index
         .tickFormat((d, i) => data[i].title);
 
     svg

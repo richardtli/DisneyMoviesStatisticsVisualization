@@ -347,7 +347,8 @@
     "year": 2010,
     "budget": 260,
     "boxOffice": 592.5,
-    "color": "#FFA07A"
+    "color": "#FFA07A",
+    "posterFile": "tangled.jpg"
   },
   {
     "title": "Winnie the Pooh",
@@ -368,7 +369,8 @@
     "year": 2013,
     "budget": 150,
     "boxOffice": 1280,
-    "color": "#A7D3E0"
+    "color": "#A7D3E0",
+    "posterFile": "frozen.jpeg"
   },
   {
     "title": "Big Hero 6",
