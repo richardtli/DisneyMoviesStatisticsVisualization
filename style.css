@@ -1,6 +1,24 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-.poster{
-    opacity: 1;
+
+.container {
+    position: relative;
+}
+.poster {
+  opacity: 1;
+}
+
+.tool-tip {
+  position: absolute;
+  background-color: white;
+  padding: 8px;
+  pointer-events: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-size: 16px;
 }
