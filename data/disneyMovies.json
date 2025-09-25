@@ -4,442 +4,505 @@
     "year": 1937,
     "budget": 1.5,
     "boxOffice": 418,
-    "color": "#FFCA35"
+    "color": "#3567a1",
+    "neonColor": "#3DA7FE"
   },
   {
     "title": "Pinocchio",
     "year": 1940,
     "budget": 2.6,
     "boxOffice": 164,
-    "color": "#A67C52"
+    "color": "#A67C52",
+    "neonColor": "#FFA745"
   },
   {
     "title": "Fantasia",
     "year": 1940,
     "budget": 2.28,
     "boxOffice": 83.3,
-    "color": "#2A2F4F"
+    "color": "#0d60a4",
+    "neonColor": "#0D9BFF"
   },
   {
     "title": "Dumbo",
     "year": 1941,
     "budget": 0.95,
     "boxOffice": 1.3,
-    "color": "#F4E1D2"
+    "color": "#F4E1D2",
+    "neonColor": "#FFEAD9"
   },
   {
     "title": "Bambi",
     "year": 1942,
     "budget": 2,
     "boxOffice": 267.4,
-    "color": "#7B9E67"
+    "color": "#eca22e",
+    "neonColor": "#FFD744"
   },
   {
     "title": "Saludos Amigos",
     "year": 1943,
     "budget": "NA",
     "boxOffice": 1,
-    "color": "#E27D60"
+    "color": "#E27D60",
+    "neonColor": "#FF997F"
   },
   {
     "title": "The Three Caballeros",
     "year": 1946,
     "budget": "NA",
     "boxOffice": 3.355,
-    "color": "#FABE3A"
+    "color": "#FABE3A",
+    "neonColor": "#FFE86A"
   },
   {
     "title": "Make Mine Music",
     "year": 1946,
     "budget": 1.35,
     "boxOffice": 3.275,
-    "color": "#C1440E"
+    "color": "#C1440E",
+    "neonColor": "#FF4411"
   },
   {
     "title": "Fun and Fancy Free",
     "year": 1947,
     "budget": "NA",
     "boxOffice": 3.165,
-    "color": "#FFB6B9"
+    "color": "#FFB6B9",
+    "neonColor": "#FFB6FF"
   },
   {
     "title": "Melody Time",
     "year": 1948,
     "budget": 1.5,
     "boxOffice": 2.56,
-    "color": "#BFD7EA"
+    "color": "#BFD7EA",
+    "neonColor": "#BFEFFF"
   },
   {
     "title": "The Adentures of Ichabod and Mr. Toad",
     "year": 1949,
     "budget": "NA",
     "boxOffice": 1.625,
-    "color": "#5E503F"
+    "color": "#5E503F",
+    "neonColor": "#8C7F70"
   },
   {
     "title": "Cinderella",
     "year": 1950,
     "budget": 2.2,
     "boxOffice": 182,
-    "color": "#6A9CC3"
+    "color": "#71d3fb",
+    "neonColor": "#49E6FF"
   },
   {
     "title": "Alice in Wonderland",
     "year": 1951,
     "budget": 3,
     "boxOffice": 3.5,
-    "color": "#EEDD82"
+    "color": "#5194d0",
+    "neonColor": "#51BFFF"
   },
   {
     "title": "Peter Pan",
     "year": 1953,
     "budget": 4,
     "boxOffice": 87.4,
-    "color": "#3E8E41"
+    "color": "#3E8E41",
+    "neonColor": "#56FF53"
   },
   {
     "title": "Lady and the Tramp",
     "year": 1955,
     "budget": 4,
     "boxOffice": 187,
-    "color": "#C072A1"
+    "color": "#f58738",
+    "neonColor": "#FFAA26"
   },
   {
     "title": "Sleeping Beauty",
     "year": 1959,
     "budget": 6,
     "boxOffice": 51.6,
-    "color": "#D49BC4"
+    "color": "#e65685",
+    "neonColor": "#FF4FBF"
   },
   {
     "title": "One Hundred and One Dalmatians",
     "year": 1961,
     "budget": 4,
     "boxOffice": 303,
-    "color": "#000000"
+    "color": "#000000",
+    "neonColor": "#FFFFFF"
   },
   {
     "title": "The Sword in the Stone",
     "year": 19,
     "budget": 3,
     "boxOffice": 22.2,
-    "color": "#7E9A76"
+    "color": "#7E9A76",
+    "neonColor": "#AFFF9A"
   },
   {
     "title": "The Jungle Book",
     "year": 1967,
     "budget": 4,
     "boxOffice": 378,
-    "color": "#3F6E5E"
+    "color": "#3F6E5E",
+    "neonColor": "#3FEF9A"
   },
   {
     "title": "The Aristocats",
     "year": 1970,
     "budget": 4,
     "boxOffice": 191,
-    "color": "#A58DBA"
+    "color": "#bc362a",
+    "neonColor": "#FF362A"
   },
   {
     "title": "Robin Hood",
     "year": 1973,
     "budget": 5,
     "boxOffice": 33,
-    "color": "#8C682B"
+    "color": "#7e8f4b",
+    "neonColor": "#AAFF3A"
   },
   {
     "title": "The Many Adventures of Winnie the Pooh",
     "year": 1977,
     "budget": "NA",
     "boxOffice": "NA",
-    "color": "#FFD700"
+    "color": "#FFD700",
+    "neonColor": "#FFF730"
   },
   {
     "title": "The Rescuers",
     "year": 1977,
     "budget": 7.5,
     "boxOffice": 169,
-    "color": "#35654D"
+    "color": "#35654D",
+    "neonColor": "#35FF84"
   },
   {
     "title": "The Fox and the Hound",
     "year": 1981,
     "budget": 12,
     "boxOffice": 63.5,
-    "color": "#A14F4F"
+    "color": "#A14F4F",
+    "neonColor": "#FF4F4F"
   },
   {
     "title": "The Black Cauldron",
     "year": 1985,
     "budget": 44,
     "boxOffice": 21.3,
-    "color": "#221F4D"
+    "color": "#221F4D",
+    "neonColor": "#4422FF"
   },
   {
     "title": "The Great Mouse Detective",
     "year": 1986,
     "budget": 14,
     "boxOffice": 50,
-    "color": "#9D9D9D"
+    "color": "#9D9D9D",
+    "neonColor": "#FFFFFF"
   },
   {
     "title": "Oliver and Company",
     "year": 1988,
     "budget": 31,
     "boxOffice": 121,
-    "color": "#FF7F50"
+    "color": "#FF7F50",
+    "neonColor": "#FF9F70"
   },
   {
     "title": "The Little Mermaid",
     "year": 1989,
     "budget": 40,
     "boxOffice": 235,
-    "color": "#1E90FF"
+    "color": "#1E90FF",
+    "neonColor": "#1EB8FF"
   },
   {
     "title": "The Rescuers Down Under",
     "year": 1990,
     "budget": "NA",
     "boxOffice": 47.4,
-    "color": "#FFDAB9"
+    "color": "#FFDAB9",
+    "neonColor": "#FFEBDA"
   },
   {
     "title": "Beauty and the Beast",
     "year": 1991,
     "budget": 25,
     "boxOffice": 451.2,
-    "color": "#8B4513"
+    "color": "#7e8f4b",
+    "neonColor": "#AAFF3A"
   },
   {
     "title": "Aladdin",
     "year": 1992,
     "budget": 28,
     "boxOffice": 504.1,
-    "color": "#FFD700"
+    "color": "#ac4dcf",
+    "neonColor": "#D54DFF"
   },
   {
     "title": "The Lion King",
     "year": 1994,
     "budget": 45,
     "boxOffice": 978.8,
-    "color": "#E25822"
+    "color": "#E25822",
+    "neonColor": "#FF5A22"
   },
   {
     "title": "Pocahontas",
     "year": 1995,
     "budget": 55,
     "boxOffice": 346.1,
-    "color": "#4B5320"
+    "color": "#f5cb6b",
+    "neonColor": "#FFEF6B"
   },
   {
     "title": "The Hunchback of Notre Dame",
     "year": 1996,
     "budget": 70,
     "boxOffice": 325.3,
-    "color": "#5E4B8B"
+    "color": "#a5b848",
+    "neonColor": "#DFFF48"
   },
   {
     "title": "Hercules",
     "year": 1997,
     "budget": 85,
     "boxOffice": 252.7,
-    "color": "#FF4500"
+    "color": "#fd83ad",
+    "neonColor": "#FF83EB"
   },
   {
     "title": "Mulan",
     "year": 1998,
     "budget": 90,
     "boxOffice": 304.3,
-    "color": "#DC143C"
+    "color": "#e40026",
+    "neonColor": "#FF002A"
   },
   {
     "title": "Tarzan",
     "year": 1999,
     "budget": 130,
     "boxOffice": 448.2,
-    "color": "#228B22"
+    "color": "#91502c",
+    "neonColor": "#D1622C"
   },
   {
     "title": "Fantasia 2000",
     "year": 1999,
     "budget": 85,
     "boxOffice": 90.9,
-    "color": "#4B0082"
+    "color": "#4B0082",
+    "neonColor": "#7B00FF"
   },
   {
     "title": "Dinosaur",
     "year": 2000,
     "budget": 127.5,
     "boxOffice": 349.5,
-    "color": "#708090"
+    "color": "#708090",
+    "neonColor": "#A0C0FF"
   },
   {
     "title": "The Emperor's New Groove",
     "year": 2000,
     "budget": 100,
     "boxOffice": 169.7,
-    "color": "#9ACD32"
+    "color": "#4735be",
+    "neonColor": "#6E3FFF"
   },
   {
     "title": "Atlantis: The Lost Empire",
     "year": 2001,
     "budget": 120,
     "boxOffice": 186.1,
-    "color": "#4682B4"
+    "color": "#4682B4",
+    "neonColor": "#47A2FF"
   },
   {
     "title": "Lilo and Stitch",
     "year": 2002,
     "budget": 80,
     "boxOffice": 273.1,
-    "color": "#00CED1"
+    "color": "#00CED1",
+    "neonColor": "#00FFF8"
   },
   {
     "title": "Treasure Planet",
     "year": 2002,
     "budget": 140,
     "boxOffice": 109.6,
-    "color": "#6B8E23"
+    "color": "#6B8E23",
+    "neonColor": "#AFFF23"
   },
   {
     "title": "Brother Bear",
     "year": 2003,
     "budget": 46,
     "boxOffice": 250.4,
-    "color": "#CD853F"
+    "color": "#CD853F",
+    "neonColor": "#FFB055"
   },
   {
     "title": "Home on the Range",
     "year": 2004,
     "budget": 110,
     "boxOffice": 145.3,
-    "color": "#8B4513"
+    "color": "#8B4513",
+    "neonColor": "#D95C13"
   },
   {
     "title": "Chicken Little",
     "year": 2005,
     "budget": 150,
     "boxOffice": 314.4,
-    "color": "#FFD700"
+    "color": "#FFD700",
+    "neonColor": "#FFF700"
   },
   {
     "title": "Meet the Robinsons",
     "year": 2007,
     "budget": 150,
     "boxOffice": 170.5,
-    "color": "#87CEEB"
+    "color": "#87CEEB",
+    "neonColor": "#87F6FF"
   },
   {
     "title": "Bolt",
     "year": 2008,
     "budget": 150,
     "boxOffice": 310,
-    "color": "#F0E68C"
+    "color": "#F0E68C",
+    "neonColor": "#FFFF6C"
   },
   {
     "title": "The Princess and the Frog",
     "year": 2009,
     "budget": 105,
     "boxOffice": 271,
-    "color": "#32CD32"
+    "color": "#56dba2",
+    "neonColor": "#56FFCD"
   },
   {
     "title": "Tangled",
     "year": 2010,
     "budget": 260,
     "boxOffice": 592.5,
-    "color": "#FFA07A",
-    "posterFile": "tangled.jpg"
+    "color": "#f6c4dd",
+    "neonColor": "#FFD4FF",
+    "posterFile" : "tangled.jpg"
   },
   {
     "title": "Winnie the Pooh",
     "year": 2011,
     "budget": 30,
     "boxOffice": 50.1,
-    "color": "#DEB887"
+    "color": "#DEB887",
+    "neonColor": "#FFEFB7"
   },
   {
     "title": "Wreck-It Ralph",
     "year": 2012,
     "budget": 165,
     "boxOffice": 496.5,
-    "color": "#FF6347"
+    "color": "#f82021",
+    "neonColor": "#FF2021"
   },
   {
     "title": "Frozen",
     "year": 2013,
     "budget": 150,
     "boxOffice": 1280,
-    "color": "#A7D3E0",
-    "posterFile": "frozen.jpeg"
+    "color": "#80c8e8",
+    "neonColor": "#80FFFF",
+    "posterFile" : "frozen.jpeg"
   },
   {
     "title": "Big Hero 6",
     "year": 2014,
     "budget": 165,
     "boxOffice": 657.8,
-    "color": "#4682B4"
+    "color": "#c02428",
+    "neonColor": "#FF2428"
   },
   {
     "title": "Zootopia",
     "year": 2016,
     "budget": 150,
     "boxOffice": 1025,
-    "color": "#FFD700"
+    "color": "#04cc47",
+    "neonColor": "#00FF74"
   },
   {
     "title": "Moana",
     "year": 2016,
     "budget": 175,
-  "boxOffice": 687.2,
-    "color": "#FF4500"
+    "boxOffice": 687.2,
+    "color": "#25d1df",
+    "neonColor": "#25FFFF"
   },
   {
     "title": "Ralph Breaks the Internet",
     "year": 2018,
     "budget": 175,
     "boxOffice": 529.3,
-    "color": "#6A5ACD"
+    "color": "#e84b50",
+    "neonColor": "#FF4B50"
   },
   {
     "title": "Frozen 2",
     "year": 2019,
     "budget": 150,
     "boxOffice": 1453,
-    "color": "#6FC2E8"
+    "color": "#fa44ff",
+    "neonColor": "#FF44FF"
   },
   {
     "title": "Raya and the Last Dragon",
     "year": 2021,
     "budget": 100,
     "boxOffice": 130,
-    "color": "#8A2BE2"
+    "color": "#41cea3",
+    "neonColor": "#41FFDA"
   },
   {
     "title": "Encanto",
     "year": 2021,
     "budget": 150,
     "boxOffice": 261.3,
-    "color": "#FF69B4"
+    "color": "#1789ab",
+    "neonColor": "#17ABFF"
   },
   {
     "title": "Strange World",
     "year": 2022,
     "budget": 180,
     "boxOffice": 73.6,
-    "color": "#4876FF"
+    "color": "#4876FF",
+    "neonColor": "#487DFF"
   },
   {
     "title": "Wish",
     "year": 2023,
     "budget": 200,
     "boxOffice": 255,
-    "color": "#FF7F50"
+    "color": "#1789ab",
+    "neonColor": "#17ABFF"
   },
   {
     "title": "Moana 2",
     "year": 2024,
     "budget": 150,
     "boxOffice": 1059,
-    "color": "#1E90FF"
+    "color": "#bd2e33",
+    "neonColor": "#FF2E33"
   }
 ]

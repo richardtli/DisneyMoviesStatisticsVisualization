@@ -9,7 +9,13 @@ fetch("data/disneyMovies.json")
   .catch((error) => console.error("Error loading JSON:", error));
 
 function main() {
+  const labelColor = "#ff38f5";
+  const backgroundColor = "#100e2b";
+
+
   const container = document.querySelector(".container");
+  const body = document.body
+  body.style.backgroundColor = backgroundColor
   const tooltip = d3.select(".tool-tip");
 
   const margin = {
@@ -23,7 +29,6 @@ function main() {
 
   const fullWidth = width + margin.left + margin.right;
   const fullHeight = height + margin.top + margin.bottom;
-  const aspectRatio = fullWidth / fullHeight;
 
   const svg = d3
     .create("svg")
@@ -32,10 +37,8 @@ function main() {
     .style("width", "100%") // fill width if it fits
     .style("height", "100%") // fill height if it fits
     .style("max-width", "98vw") // don't go beyond screen width
-    .style("max-height", "98vh") // don't go beyond screen height
-    .style("margin", "auto") // optional centering
-    .style("display", "block")
-    .style("border", "1px dotted #000");
+    .style("max-height", "99vh") // don't go beyond screen height
+
 
   const defs = svg.append("defs");
 
@@ -46,10 +49,39 @@ function main() {
     .attr("width", fullWidth)
     .attr("height", fullHeight)
     .append("image")
-    .attr("href", "posters/frozen.jpeg") // <-- set the actual image URL here
+    .attr("href", "")
     .attr("width", fullWidth)
     .attr("height", fullHeight)
     .attr("preserveAspectRatio", "xMidYMid slice");
+
+
+  const glow = defs
+    .append("filter")
+    .attr("id", "glow")
+    .attr("x", "-50%")
+    .attr("y", "-50%")
+    .attr("width", "200%")
+    .attr("height", "200%");
+
+  glow
+    .append("feGaussianBlur")
+    .attr("in", "SourceGraphic")
+    .attr("stdDeviation", 2) 
+    .attr("result", "blurred");
+
+  const feMerge = glow.append("feMerge");
+  feMerge.append("feMergeNode").attr("in", "blurred");
+  feMerge.append("feMergeNode").attr("in", "SourceGraphic");
+
+
+    const dataBackground = svg
+    .append("g")
+
+  dataBackground
+    .append("rect")
+    .attr("width", fullWidth)
+    .attr("height", fullHeight)
+    .style("fill", backgroundColor);
 
   const poster = svg
     .append("rect")
@@ -60,26 +92,62 @@ function main() {
     .attr("fill", "url(#imgpattern)")
     .classed("poster", true);
 
-  const dataBackground = svg
-    .append("g")
-    .attr("transform", `translate(${margin.left}, ${margin.top})`);
+    
 
-  dataBackground
-    .append("rect")
-    .attr("width", width)
-    .attr("height", height)
-    .attr("fill", "none");
+
 
   const x = d3
     .scaleBand()
     .domain(data.map((d, i) => i))
     .rangeRound([margin.left, width - margin.right])
-    .padding(0.1);
+    .padding(0.3);
 
   const y = d3
     .scaleLinear()
     .domain([0, d3.max(data, (d) => d.boxOffice)])
     .range([height - margin.bottom, margin.top]);
+
+    const xAxis = d3
+    .axisBottom(x)
+    .tickValues(d3.range(data.length)) // tick at each integer index
+    .tickFormat((d, i) => "");
+
+  svg
+    .append("g")
+    .attr("transform", `translate(0,${height - margin.bottom})`)
+    .call(xAxis)
+    .call((g) => {
+      // Tick lines to white
+
+      g.selectAll(".tick line").attr("stroke", "none");
+
+      // Tick labels to white
+      g.selectAll(".tick text").attr("fill", labelColor);
+
+      // If you want the domain line white too
+      g.select(".domain").attr("stroke", labelColor);
+    });
+
+  svg
+    .append("g")
+    .attr("transform", `translate(${margin.left},0)`)
+    .call(
+      d3
+        .axisLeft(y)
+        .tickFormat((y) => y.toFixed())
+        .tickSizeOuter(100)
+        .tickSizeInner(-width) // or whatever the width of your chart is
+        .tickSizeOuter(0)
+    )
+    .call((g) => {
+      g.selectAll(".tick line").attr("transform", "translate(15)");
+      g.selectAll(".tick line").attr("stroke-width", 0.5);
+      g.selectAll(".tick line").attr("stroke", labelColor + "55"); // make tick lines white
+      g.selectAll(".tick text").attr("fill", labelColor);
+      g.select(".domain").remove();
+    });
+
+
 
   svg
     .append("g")
@@ -92,12 +160,13 @@ function main() {
     .attr("y", (d) => y(d.boxOffice))
     .attr("height", (d) => y(0) - y(d.boxOffice))
     .attr("width", x.bandwidth())
-    .attr("fill", (d) => d.color)
+    .attr("fill", (d) => d.neonColor)
     .attr("stroke", "none")
     .attr("stroke-width", 0)
     .style("cursor", "pointer")
+    .style("filter", "url(#glow)")
     .on("mouseover", function (event, d) {
-      d3.select(this).attr("stroke", "black").attr("stroke-width", 1);
+      d3.select(this).attr("stroke", "white").attr("stroke-width", 1);
       pattern.attr("href", `posters/${d.posterFile}`);
       tooltip
         .style("opacity", 1)
@@ -108,7 +177,7 @@ function main() {
         )
         .style("left", event.pageX + 10 + "px")
         .style("top", event.pageY - 28 + "px")
-        .style("background-color", d.color);
+        .style("background-color", d.neonColor);
       if(d.boxOffice >= 1000){
         tooltip.html(
           `<strong>${
@@ -129,44 +198,5 @@ function main() {
       tooltip.style("opacity", 0);
     })
     .append("title")
-    .text((d) => d.title);
-
-  const xAxis = d3
-    .axisBottom(x)
-    .tickValues("") // tick at each integer index
-    .tickFormat((d, i) => data[i].title);
-
-  svg
-    .append("g")
-    .attr("transform", `translate(0,${height - margin.bottom})`)
-    .call(xAxis)
-    .selectAll("text") // select the tick labels
-    .attr("transform", "rotate(-90)") // rotate them 90 degrees counter-clockwise
-    .style("text-anchor", "end")
-    .attr("dx", "-0.8em") // shift a little in x after rotation
-    .attr("dy", "-0.5em")
-    .style("font-family", "Roboto, sans-serif")
-    .style("font-size", "12px");
-
-//   svg
-//     .append("g")
-//     .attr("transform", `translate(${margin.left},0)`)
-//     .call(
-//       d3
-//         .axisLeft(y)
-//         .tickFormat((y) => y.toFixed())
-//         .tickSizeOuter(100)
-//     )
-//     .call((g) => g.select(".domain").remove())
-//     .call((g) =>
-//       g
-//         .append("text")
-//         .attr("x", -margin.left)
-//         .attr("y", margin.top / 2)
-//         .attr("fill", "currentColor")
-//         .attr("text-anchor", "start")
-//         .text("↑ Box Office")
-//     );
-
   container.append(svg.node());
 }
